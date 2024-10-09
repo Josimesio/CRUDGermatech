@@ -36,6 +36,8 @@ Dependências:
 
      LomBok -> Utilizado para evitar muitas linhas de código através de annotations.
 
+     Toncat -> Servidor usado para abrir a aplicação
+
 Programas Utilizados :
 
     Postman - Utilizado para fazer as requisições (CONSUMIR) a aplicação.
