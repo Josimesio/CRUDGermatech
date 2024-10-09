@@ -5,7 +5,7 @@
 -- Dumped from database version 15.8
 -- Dumped by pg_dump version 16.4
 
--- Started on 2024-10-09 00:18:15
+-- Started on 2024-10-09 04:59:38
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -79,6 +79,9 @@ ALTER TABLE ONLY public.tb_people ALTER COLUMN id SET DEFAULT nextval('public.tb
 --
 
 COPY public.tb_people (id, age, cpf, email, name, password, phone) FROM stdin;
+1	10	11586637000128	germantech@gmail.com	GERMAN TECH SISTEMAS E SERVICOS ADMINISTRATIVOS LTDA	1234567	04504533789090
+3	10	11586637000333	germantech@gmail.com	GERMAN TECH SISTEMAS E SERVICOS ADMINISTRATIVOS LTDA	1234567	04504533789090
+4	10	11586637000333333	germantech@gmail.com	GERMAN TECH SISTEMAS E SERVICOS ADMINISTRATIVOS LTDA	1234567	04504533789090
 \.
 
 
@@ -88,7 +91,7 @@ COPY public.tb_people (id, age, cpf, email, name, password, phone) FROM stdin;
 -- Name: tb_people_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.tb_people_id_seq', 1, false);
+SELECT pg_catalog.setval('public.tb_people_id_seq', 4, true);
 
 
 --
@@ -109,7 +112,7 @@ ALTER TABLE ONLY public.tb_people
     ADD CONSTRAINT uk_d2d7q2ilfl9yx9995aw37ukwh UNIQUE (cpf);
 
 
--- Completed on 2024-10-09 00:18:15
+-- Completed on 2024-10-09 04:59:38
 
 --
 -- PostgreSQL database dump complete
