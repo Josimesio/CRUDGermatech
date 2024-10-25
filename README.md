@@ -52,6 +52,7 @@ Bancos de Dados :
 
     PostgreSQL - Usado em ambiente de desenvolvimento e produção.
 
+
 Dev Teste JAVA - Germantech Sistemas
 
 Faça um programa (CRUD) em JAVA com os requisitos abaixo, utilizando um banco de dados para armazenar as informações (preferencialmente PostgreSQL).

@@ -1,4 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // Aplica máscara ao campo CPF/CNPJ
+    const cpfCnpjInput = document.getElementById('cpf');
+    const cpfCnpjMask = new Inputmask({
+        mask: ['999.999.999-99', '99.999.999/9999-99'],
+        keepStatic: true,
+        showMaskOnHover: false,
+        showMaskOnFocus: true,
+        oncomplete: function () {
+            console.log('CPF/CNPJ válido');
+        },
+        onincomplete: function () {
+            alert('CPF/CNPJ incompleto! Verifique e preencha corretamente.');
+            cpfCnpjInput.value = ''; // Limpa o campo se incompleto
+        }
+    });
+    cpfCnpjMask.mask(cpfCnpjInput);
+
     loadPeople();
 
     document.getElementById('personForm').addEventListener('submit', function (e) {
